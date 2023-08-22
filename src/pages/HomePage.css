@@ -1,0 +1,112 @@
+/* Basic styles for the entire page */
+.home-page {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header styles */
+.header {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 0 0 auto;
+}
+
+.bank-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.title-group {
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.sub-title {
+  font-size: 18px;
+  color: #9f6976;
+}
+
+/* Basic styles for the landing page */
+.landing-page {
+  flex: 1 0 auto;
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.loan-types {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.loan-card {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loan-icon {
+  font-size: 36px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #9f6976;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.loan-card:hover {
+  transform: translateY(-5px);
+}
+
+h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  flex: 0 0 auto;
+}
+
+.footer p {
+  margin: 0;
+}
