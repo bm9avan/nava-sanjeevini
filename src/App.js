@@ -3,6 +3,7 @@ import HomePage from './pages/HomePage';
 import NavBar from './components/NavBar';
 import LoanDetails from './pages/LoanDetails';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Contact from './pages/Contact';
 
 function App() {
   const router = createBrowserRouter([
@@ -12,7 +13,7 @@ function App() {
       children: [
         { index: true, element: <HomePage /> },
         { path: "/loan", element: <LoanDetails /> },
-        { path: "/contact", element: "contact" },
+        { path: "/contact", element: <Contact /> },
       ],
     },
   ]);

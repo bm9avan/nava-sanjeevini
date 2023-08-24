@@ -10,53 +10,54 @@ const LoanDetails = () => {
   const { t } = useTranslation("global");
   return (
     <div className="top">
-      <div className="radio-container">
-        <input
-          type="radio"
-          id="loanChoice1"
-          name="loan"
-          value="lone.1"
-          className="radio-input"
-          checked={option === "1" ? true : false}
-          onChange={() => setOption("1")}
-        />
-        <label htmlFor="loanChoice1" className="radio-label">
-          {t("loan.1.title")}
-        </label>
+      <div className="outerRadio">
+        <div className="radio-container">
+          <span className="eachRadio">
+            <input
+              type="radio"
+              id="loanChoice1"
+              name="loan"
+              value="lone.1"
+              className="radio-input"
+              checked={option === "1" ? true : false}
+              onChange={() => setOption("1")}
+            />
+            <label htmlFor="loanChoice1" className="radio-label">
+              {t("loan.1.title")}
+            </label>
+          </span>
 
-        <input
-          type="radio"
-          id="loanChoice2"
-          name="loan"
-          value="lone.2"
-          className="radio-input"
-          onChange={() => setOption("2")}
-        />
-        <label htmlFor="loanChoice2" className="radio-label">
-          {t("loan.2.title")}
-        </label>
+          <span className="eachRadio">
+            <input
+              type="radio"
+              id="loanChoice2"
+              name="loan"
+              value="lone.2"
+              className="radio-input"
+              onChange={() => setOption("2")}
+            />
+            <label htmlFor="loanChoice2" className="radio-label">
+              {t("loan.2.title")}
+            </label>
+          </span>
 
-        <input
-          type="radio"
-          id="loanChoice3"
-          name="loan"
-          value="lone.3"
-          className="radio-input"
-          onChange={() => setOption("3")}
-        />
-        <label htmlFor="loanChoice3" className="radio-label">
-          {t("loan.3.title")}
-        </label>
+          <span className="eachRadio">
+            <input
+              type="radio"
+              id="loanChoice3"
+              name="loan"
+              value="lone.3"
+              className="radio-input"
+              onChange={() => setOption("3")}
+            />
+            <label htmlFor="loanChoice3" className="radio-label">
+              {t("loan.3.title")}
+            </label>
+          </span>
+        </div>
       </div>
 
-      {option === "1" ? (
-        <LandLoan/>
-      ) : option === "2" ? (
-        <AadharLoan/>
-      ) : (
-        <RD/>
-      )}
-
+      {option === "1" ? <LandLoan /> : option === "2" ? <AadharLoan /> : <RD />}
     </div>
   );
 };

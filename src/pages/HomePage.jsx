@@ -19,6 +19,9 @@ const HomePage = () => {
           </div>
         </div>
       </header>
+      <div className='offhrs'>
+        {t("home.offHrs")}
+      </div>
       <div className="landing-page">
         <div className="loan-types">
           {Object.keys(loanTypes).map((loan) => (
@@ -30,7 +33,7 @@ const HomePage = () => {
         </div>
       </div>
       <footer className="footer">
-        <p>&copy; 2023 Local Bank. All rights reserved.</p>
+        <p>&copy; 2023 {t('home.homeHeading')} All rights reserved.</p>
       </footer>
     </div>
   );

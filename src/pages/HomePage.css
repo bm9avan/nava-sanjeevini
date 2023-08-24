@@ -16,6 +16,9 @@
   flex: 0 0 auto;
 }
 
+.offhrs{
+  padding-top: 38px;
+}
 .bank-header {
   display: flex;
   flex-direction: column;

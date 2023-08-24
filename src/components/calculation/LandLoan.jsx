@@ -5,6 +5,7 @@ import "../Table.css";
 const LandLoan = () => {
   const [arr, setArr] = useState([]);
   const [loan, setLoan] = useState(100000);
+  const [disLone, setDisLone] = useState(loan);
   const inref = useRef();
 
   useEffect(() => {
@@ -62,13 +63,15 @@ const LandLoan = () => {
   return (
     <>
       <form onSubmit={printHandler} className="loanForm">
-        <h3 className="amount-heading">
+        <span className="amount-heading">
           <label htmlFor="amount">Amount</label>
-        </h3>
+        </span>
         <input
           ref={inref}
           type="number"
           min="1"
+          value={disLone}
+          onChange={(e) => setDisLone(e.target.value)}
           id="amount"
           placeholder="Enter Amount"
           className="amount-input"
