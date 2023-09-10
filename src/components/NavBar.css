@@ -19,7 +19,7 @@
   color: white;
   text-align: center;
   display: block;
-  padding: 14px 16px;
+  padding: 14px 12px;
   text-decoration: none;
 }
 
@@ -34,4 +34,6 @@
 
 .lang {
   float: right;
+  padding-bottom: 0px;
+  padding-left: 0px;
 }

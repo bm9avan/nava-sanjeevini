@@ -26,7 +26,7 @@ const HomePage = () => {
         <div className="loan-types">
           {Object.keys(loanTypes).map((loan) => (
             <div className="loan-card" key={loan}>
-              <div className="loan-icon">{loanTypes[loan].charAt(0)}</div>
+              <div className="loan-icon">{t(`home.type.${loan}`).charAt(0)}</div>
               <h3>{t(`home.type.${loan}`)}</h3>
             </div>
           ))}
